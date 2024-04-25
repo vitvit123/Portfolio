@@ -1,0 +1,213 @@
+
+/* Custom styles */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #757371; /* Changed text color to #757371 */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto;
+}
+
+.navbar {
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #757371 !important; /* Changed navbar text color to #757371 */
+}
+
+#hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+#about {
+  background-color: #000;
+}
+
+#contact {
+  background-color: #000;
+}
+
+#about h2,
+#projects h2,
+#contact h2 {
+  color: #757371; /* Changed section heading text color to #757371 */
+}
+
+#about p {
+  color: #aaa;
+}
+
+.form-control {
+  background-color: #000;
+  color: #757371; /* Changed form control text color to #757371 */
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-primary {
+  background-color: #000;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #222;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.btn-primary.gradient-border {
+background: none;
+color: #fff;
+border: 2px solid transparent;
+border-image-slice: 1;
+border-image-source: linear-gradient(to right, #ff00cc, #3333ff); /* Adjust gradient colors as desired */
+}
+
+.btn-primary.gradient-border:hover {
+background-color: transparent;
+}
+
+/* Ensure each list item stays on a single line */
+.technology-item {
+width: 200px; /* Adjust the width as needed */
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.contact-box {
+background-color: #222;
+border-radius: 10px;
+border: 2px solid #757371;
+}
+
+.contact-box h2 {
+color: #757371;
+}
+
+.contact-box ul {
+padding-left: 0;
+}
+
+.contact-box li {
+margin-bottom: 20px;
+}
+
+.hidden {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(-100%);
+  transition: all 1s;
+}
+.hidden_Top {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%); 
+  transition: all 1s;
+}
+.hidden_right{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(100%);
+  transition: all 1s;
+}
+.hidden_bottom{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  opacity: 0; 
+  filter: blur(5px); 
+  transform: translateY(100%); 
+  transition: all 1s;
+}
+.hidden_PopUp{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  opacity: 0; 
+  transition: all 2s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+.iconss:nth-child(2){
+  transition-delay: 200ms;
+}
+.iconss:nth-child(3){
+  transition-delay: 400ms;
+}
+.iconss:nth-child(4){
+  transition-delay: 600ms;
+}
+.iconss:nth-child(5){
+  transition-delay: 800ms;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  display: none;
+  z-index: 999;
+}
+
+#work-experience {
+  background-image: url('IMG/36.wp6899583.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+#line {
+  position: absolute;
+  top: 17%;
+  bottom: 0;
+  margin: auto;
+}
+#contact {
+  position: relative;
+  background-image: url('IMG/desktop-wallpaper-web-developer-website.jpg');
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
