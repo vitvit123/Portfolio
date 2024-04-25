@@ -25,13 +25,13 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#technologies">Technologies</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="#work-experience">Work Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#technologies">Technologies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -55,7 +55,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h1 class="display-3"><b>I'm Heng Devit.</b> </h1>
-          <p class="lead"><b>I'm a Web Developer</b></p>
+          <p class="lead"><b>I'm a Full Stack Web Developer</b></p>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
             <div class="col-lg-6 d-flex align-items-center ">
                 <div>
                     <h2 class="display-4 hidden_right" style="color: #757371;">About Me</h2>
-                    <p class="lead hidden_right">I am a passionate developer with a knack for creativity and problem-solving. With years of experience in web development, I specialize in crafting elegant solutions to complex problems. Let's build something amazing together!</p>
+                    <p class="lead hidden_right">I am a passionate developer with a keen eye for creativity and a talent for problem-solving. With a wealth of experience in the field of web development, I have honed my skills to specialize in crafting elegant solutions to intricate problems. Whether it's unraveling complex algorithms or designing user-friendly interfaces, I thrive on the challenge of creating something truly remarkable. Let's collaborate and build something amazing together!</p>
                     <a id="downloadButton" href="Black White Minimalist CV Resume-1.pdf" download="Black_White_Minimalist_CV_Resume-1.pdf" class="btn btn-primary hidden_bottom">
                         <i class="fas fa-download mr-2"></i>Download Resume
                       </a>
@@ -86,7 +86,7 @@
 <section id="technologies" style="background-color: black !important;" class="py-5 bg-dark">
     <div class="container">
         <h2 class="display-4 text-center mb-5 hidden_bottom" style="color: #757371;">Technologies I've Been Working With</h2>
-        <div class="row">
+        <div class="row" >
           <div class="col-lg-3 iconss hidden">
               <h3>Frontend</h3>
               <ul class="list-unstyled">
@@ -112,6 +112,7 @@
               <h3 style="color: #757371;">Database</h3>
               <ul class="list-unstyled">
                   <li class="mr-3 technology-item"><i class="icon fas fa-database"></i> SQL / MySQL</li>
+                  <li class="mr-3 technology-item"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/phpmyadmin_logo_icon_168050.png" alt="" style="width: 24px; height: 24px;"> phpMyAdmin</li>
                   <li class="mr-3 technology-item"><img src="https://cdn-icons-png.freepik.com/512/5968/5968388.png" alt="" style="width: 24px; height: 24px;"> PostgreSQL</li>
               </ul>
           </div>
@@ -139,7 +140,7 @@
 <!-- Projects Section -->
 <section id="projects" style="background-color: black !important;" class="py-5 text-white">
   <div class="container">
-    <h2 class="display-4 text-center mb-5 hidden_PopUp" style="color: #757371;">Projects</h2>
+    <h2 class="display-4 text-center mb-5 hidden_PopUp" style="color: #757371;">Some Projects</h2>
     <div class="row" id="projectCards">
      
     </div>
@@ -152,19 +153,19 @@
 <!-- Work Experience Section -->
 <section id="work-experience" class="py-5">
   <div class="container">
-    <h2 class="display-4 text-center mb-5">Work Experience</h2>
+    <h2 class="display-4 text-center mb-5 hidden_Top">Work Experience</h2>
     <div class="row" style="display: flex; align-items: center; justify-content: center;">
 
       <hr id="line" style="width: 3px; height: 80vh; background-color: #757371; margin: 0;">
 
-      <div class="col-lg-12" style="text-align: left;">
+      <div class="col-lg-12 " style="text-align: left;">
         <h3>IT Support</h3>
         <p>ACLEDA INSTITUE OF BUSINESS</p>
         <p>NOV 2022 – JAN 2023</p>
         <p>Learning, General config with the Hardware Computer.</p>
       </div>
 
-      <div class="col-lg-12" style="text-align: right;">
+      <div class="col-lg-12 " style="text-align: right;">
         <h3>Web Developer Full Stack</h3>
         <p>ACLEDA INSTITUE OF BUSINESS</p>
         <p>NOV 2022 – JAN 2023</p>
@@ -181,7 +182,7 @@
 
 
 <!-- Contact Section -->
-<section id="contact" style="background-color: black !important;" class="py-5 bg-dark text-white">
+<section id="contact" style="background-color: black !important;" class="py-5 bg-dark text-white hidden_bottom">
   <div class="container" style="position: absolute;bottom: 50%;left: 50%;transform: translateX(-50%);">
       <div class="row justify-content-center">
           <div class="col-md-8">
@@ -285,47 +286,36 @@ document.getElementById("downloadButton").addEventListener("click", function() {
   const projects = [
     {
       title: "School Management",
-      description: "A brief description of Project 1.",
-      imageUrl: "IMG/IMG_6505 copy.jpg",
+      description: "School management systems streamline administrative tasks, enhance communication between stakeholders, and improve overall efficiency in educational institutions.",
+      imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
       githubLink: "https://github.com/vitvit123/SchoolManagementJAVA.git"
     },
     {
-      title: "ACLEDA APP Design",
-      description: "A brief description of Project 2.",
-      imageUrl: "IMG/photo_2024-04-24_10-26-11-removebg-preview.png",
-      githubLink: "https://github.com/monykappa/AceldaAppUI.git"
+      title: "Timer",
+      description: "We develop timer apps to help users manage their time effectively, boost productivity, and stay focused on tasks by providing customizable timing solutions for various activities.",
+      imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
+      githubLink: "https://github.com/vitvit123/Timer.git"
     },
     {
-      title: "Project 3",
-      description: "A brief description of Project 1.",
-      imageUrl: "IMG/IMG_6505 copy.jpg",
-      githubLink: "https://github.com/yourusername/project1-repo"
+      title: "Acleda Cantent",
+      description: "We create the ACLEDA Content System to deliver relevant and up-to-date information to users, fostering financial literacy, and enhancing customer engagement through informative content tailored to their needs.",
+      imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
+      githubLink: "https://github.com/vitvit123/Acleda-Cantent.git"
     },
     {
-      title: "Project 4",
-      description: "A brief description of Project 2.",
-      imageUrl: "IMG/photo_2024-04-24_10-26-11-removebg-preview.png",
-      githubLink: "https://github.com/yourusername/project2-repo"
+      title: "Caffee Shop",
+      description: "We create coffee shop management systems to streamline operations, improve customer service, and boost efficiency, ensuring a delightful experience for both owners and patrons.",
+      imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
+      githubLink: "https://github.com/monykappa/CafeShop.git"
     },
     {
-      title: "Project 5",
-      description: "A brief description of Project 1.",
-      imageUrl: "IMG/IMG_6505 copy.jpg",
-      githubLink: "https://github.com/yourusername/project1-repo"
+      title: "Calculator",
+      description: "We design calculators to provide quick and accurate solutions for various mathematical calculations, simplifying tasks and improving efficiency in both professional and everyday settings.",
+      imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
+      githubLink: "https://github.com/vitvit123/Calculator.git"
     },
-    {
-      title: "Project 6",
-      description: "A brief description of Project 2.",
-      imageUrl: "IMG/photo_2024-04-24_10-26-11-removebg-preview.png",
-      githubLink: "https://github.com/yourusername/project2-repo"
-    },
-    {
-      title: "Project 7",
-      description: "A brief description of Project 1.",
-      imageUrl: "IMG/IMG_6505 copy.jpg",
-      githubLink: "https://github.com/yourusername/project1-repo"
-    },
-
+    
+    
     
   ];
 
