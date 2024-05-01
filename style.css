@@ -39,7 +39,7 @@ body {
 #about h2,
 #projects h2,
 #contact h2 {
-  color: #757371; /* Changed section heading text color to #757371 */
+  color: #757371; 
 }
 
 #about p {
@@ -87,10 +87,35 @@ border-image-source: linear-gradient(to right, #ff00cc, #3333ff); /* Adjust grad
 .btn-primary.gradient-border:hover {
 background-color: transparent;
 }
+#containboxcontact{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#experienceright{
+  text-align: right;
+}
+@media (max-width: 768px) {
+  #line {
+    display: none;
+  }
+  
+  #experienceright
+  {
+    text-align: left;
+  }
+  #containboxcontact {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+}
 
-/* Ensure each list item stays on a single line */
+
 .technology-item {
-width: 200px; /* Adjust the width as needed */
+width: 200px; 
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
