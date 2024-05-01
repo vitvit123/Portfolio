@@ -87,6 +87,12 @@ document.getElementById("downloadButton").addEventListener("click", function() {
       imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
       githubLink: "https://github.com/vitvit123/Calculator.git"
     },
+    {
+      title: "Weather API",
+      description: "I create this weather application to provide real-time weather updates and forecasts, helping users plan their activities and stay informed about current weather conditions.",
+      imageUrl: "IMG/black-polygonal-background-minimal-low-poly-backdrop-with-folded-paper-texture-geometric-banner-design-template-with-polygons-futuristic-decorative-monochrome-illustration-vector.jpg",
+      githubLink: "https://github.com/vitvit123/WeatherAPI.git"
+    },
     
     
     
