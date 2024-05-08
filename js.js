@@ -54,7 +54,6 @@ document.getElementById("downloadButton").addEventListener("click", function() {
 
 
 
-    // Define an array of project data
   const projects = [
     {
       title: "School Management",
@@ -75,7 +74,7 @@ document.getElementById("downloadButton").addEventListener("click", function() {
       githubLink: "https://github.com/vitvit123/Acleda-Cantent.git"
     },
     {
-      title: "Caffee Shop",
+      title: "Coffee Shop",
       description: "We create coffee shop management systems to streamline operations, improve customer service, and boost efficiency, ensuring a delightful experience for both owners and patrons.",
       imageUrl: "IMG/wood-mulch-bkdmb5-64_600.jpg",
       githubLink: "https://github.com/monykappa/CafeShop.git"
@@ -92,8 +91,12 @@ document.getElementById("downloadButton").addEventListener("click", function() {
       imageUrl: "IMG/wood-mulch-bkdmb5-64_600.jpg",
       githubLink: "https://github.com/vitvit123/WeatherAPI.git"
     },
-    
-    
+    {
+      title: "ACLEDA APP UI",
+      description: "The ACLEDA app UI is designed to offer users a seamless, secure, and personalized banking experience. Its layout prioritizes easy navigation and accessibility to essential banking features.",
+      imageUrl: "IMG/wood-mulch-bkdmb5-64_600.jpg",
+      githubLink: "https://github.com/vitvit123/SchoolManagementJAVA.git"
+    },
     
   ];
 
@@ -105,7 +108,7 @@ document.getElementById("downloadButton").addEventListener("click", function() {
         <div class="card-body">
             <h2 class="card-title">${project.title}</h2>
             <p class="card-text">${project.description}</p>
-          </div>
+          </div> 
           <div class="card-footer bg-transparent border-top-0 d-flex justify-content-center">
             <a href="${project.githubLink}" class="btn btn-primary" target="_blank">
               <i class="fab fa-github mr-2"></i>View on GitHub
@@ -128,10 +131,12 @@ document.getElementById("downloadButton").addEventListener("click", function() {
 
   renderProjectCards();
 
-  // Get the button
+
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
+
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -141,10 +146,11 @@ function scrollFunction() {
     scrollToTopBtn.style.display = "none";
   }
 }
-// When the user clicks on the button, scroll to the top of the document with animation
-// When the user clicks on the button, scroll to the top of the document with animation
+
 scrollToTopBtn.addEventListener("click", function() {
+  
   $('html, body').animate({
     scrollTop: 0
   }, 800);
+  
 });
