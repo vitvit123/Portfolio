@@ -350,7 +350,6 @@ margin-bottom: 20px;
   100% { transform: translateY(0); }
 }
 
-/* Apply the animation to the image */
 .fly-animation {
-  animation: fly 2s ease infinite; /* Adjust timing and animation direction as needed */
+  animation: fly 2s ease infinite;
 }

@@ -32,18 +32,18 @@ hiddenRightElements.forEach(element => {
       function openTelegram() {
     window.open('https://t.me/HengDevit');
   }
-    $(document).ready(function() {
-      $("a.nav-link").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function() {
-            window.location.hash = hash;
-          });
-        }
-      });
+  $(document).ready(function() {
+    $("a.nav-link").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+  });
 
 
 document.getElementById("downloadButton").addEventListener("click", function() {
