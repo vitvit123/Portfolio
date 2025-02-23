@@ -353,3 +353,18 @@ margin-bottom: 20px;
 .fly-animation {
   animation: fly 2s ease infinite;
 }
+.iconss ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technology-item {
+  display: flex;
+  align-items: center; /* Center the icon and text vertically */
+  margin-right: 20px;  /* Add spacing between items */
+  white-space: nowrap;
+}
+.icon {
+  font-size: 18px; /* Adjust icon size */
+  margin-right: 8px; /* Space between the icon and the text */
+}
