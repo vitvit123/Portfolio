@@ -51,7 +51,61 @@ document.getElementById("downloadButton").addEventListener("click", function() {
 });
 
     });
+const timelineData = [
+    {
+      title: "IT Support Intern",
+      company: "ACLEDA University of Business",
+      date: "Nov 2022 – Jan 2023",
+      description: "Learned and performed general hardware configuration and troubleshooting. Provided technical support to staff and students, resolving hardware and software issues. Gained foundational knowledge of IT infrastructure and system maintenance."
+    },
+    {
+      title: "Web Application Intern",
+      company: "ACLEDA University of Business",
+      date: "Feb 2023 – Nov 2023",
+      description: "Conducted research and completed tasks assigned by senior developers. Assisted in the development of web applications, focusing on both front-end and back-end functionalities. Gained hands-on experience with web development frameworks and tools."
+    },
+    {
+      title: "Freelancer",
+      company: "Logi-Service",
+      date: "May 2023 – Jan 2024",
+      description: "Analyzed and designed database structures to support scalable and efficient systems. Developed both front-end and back-end functionalities, ensuring seamless integration and performance. Optimized database queries and system performance to meet client requirements. Worked closely with clients to understand their needs and deliver tailored solutions."
+    },
+    {
+      title: "Full Stack Developer Intern",
+      company: "MenGly J Quach Education",
+      date: "Jun 2024 – Present",
+      description: "Developing and maintaining web applications, managing server hosting, and designing both front-end and back-end systems. Ensuring responsive UI/UX for optimal user experience and troubleshooting system performance issues. Collaborating with team members to implement new features and improve existing functionalities."
+    }
+  ];
 
+  const timelineContainer = document.getElementById('timeline');
+  // Remove all children except the <hr>
+  Array.from(timelineContainer.children).forEach(child => {
+    if (child.tagName !== 'HR') timelineContainer.removeChild(child);
+  });
+
+  timelineData.forEach((item, idx) => {
+    const align = idx % 2 === 0 ? 'flex-start' : 'flex-end';
+    const timelineItem = document.createElement('div');
+    timelineItem.className = 'timeline-item';
+    timelineItem.style.display = 'flex';
+    timelineItem.style.justifyContent = align;
+    timelineItem.style.marginBottom = '40px';
+
+    const contentDiv = document.createElement('div');
+    contentDiv.style.width = '45%';
+    contentDiv.style.padding = '10px';
+
+    contentDiv.innerHTML = `
+      <h3>${item.title}</h3>
+      <p>${item.company}</p>
+      <p>${item.date}</p>
+      <p>${item.description}</p>
+    `;
+
+    timelineItem.appendChild(contentDiv);
+    timelineContainer.appendChild(timelineItem);
+  });
 
 
   const projects = [
